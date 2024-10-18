@@ -3,14 +3,14 @@ import React from 'react';
 function Projects() {
   const projectList = [
     {
-      title: 'Project 1',
-      description: 'A cool project I built using React and Firebase.',
-      link: 'https://github.com/yourgithub/project1'
+      title: 'Qb',
+      description: 'A super fun video game that I built in GameMakerStudio. Furthermore, I also created the music for this game! Feel free to fork the github to play/add your own levels!',
+      link: 'https://github.com/bdalsis/Qb'
     },
     {
-      title: 'Project 2',
-      description: 'Another awesome project focused on backend development.',
-      link: 'https://github.com/yourgithub/project2'
+      title: 'StayActiveBot',
+      description: 'A discord bot that reminds you to stay active when coding/gaming at your computer for long periods of time.',
+      link: 'https://www.linkedin.com/in/brick-dalsis/details/projects/'
     }
   ];
 

@@ -6,9 +6,9 @@ function Contact() {
       <h2>Contact Me</h2>
       <p>I'd love to hear from you! Feel free to reach out to me through any of the following ways:</p>
       <ul>
-        <li>Email: your.email@example.com</li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">Your LinkedIn Profile</a></li>
-        <li>GitHub: <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">Your GitHub Profile</a></li>
+        <li>Email: brickdalsis@gmail.com</li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/brick-dalsis/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
+        <li>GitHub: <a href="https://github.com/bdalsis" target="_blank" rel="noopener noreferrer">GitHub Profile</a></li>
       </ul>
     </div>
   );
