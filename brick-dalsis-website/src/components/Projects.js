@@ -1,27 +1,55 @@
 import React from 'react';
 import Slider from 'react-slick';
 import './Projects.css';
+import qb_p3 from '../images/Qb_level_p1.jpg';
+import qb_p2 from '../images/Qb_level_p2.jpg';
+import qb_p1 from '../images/qb_title.jpg';
+import rd_p3 from '../images/rd_flare.jpg';
+import rd_p1 from '../images/rd_title.jpg';
+import rd_p2 from '../images/rd_level.jpg';
+import sa_p2 from '../images/bot_commands.jpg';
+import sa_p1 from '../images/bot_msgs.jpg';
+
 
 function Projects() {
   const projectList = [
     {
       title: 'Qb',
-      description: 'A super fun video game that I built in GameMakerStudio. Furthermore, I also created the music for this game! Feel free to fork the github to play/add your own levels!',
+      description: 'A super fun 2D platformer that I built in GameMakerStudio in my free time while studying abroad in Norway. Furthermore, I also created the music for this game! Feel free to fork the github to play/add your own levels!',
       images: [
-        'your-image-url2.jpg',
-        'your-image-url3.jpg'
+        qb_p1,
+        qb_p2,
+        qb_p3,
       ],
       link: 'https://github.com/bdalsis/Qb'
     },
     {
-      title: 'StayActiveBot',
-      description: 'A discord bot that reminds you to stay active when coding/gaming at your computer for long periods of time.',
+      title: 'SongFinder',
+      description: 'A web application that my team and I created to help users find new music from an artist they just discovered. The app shows most popular songs from a certain artist using the spotifyAPI and additionally provides similar artists to listen to.',
       images: [
-        'your-image-url4.jpg',
-        'your-image-url5.jpg'
+
       ],
-      link: 'https://www.linkedin.com/in/brick-dalsis/details/projects/'
-    }
+      link: ''
+    },
+    {
+      title: 'StayActiveBot',
+      description: 'A discord bot that I built to remind you to stay active when coding/gaming at your computer for long periods of time.',
+      images: [
+        sa_p1,
+        sa_p2
+      ],
+      link: ''
+    },
+    {
+      title: 'Red Depths',
+      description: 'A video game that my team and I created where you play as an USSR miner who has to navigate his way through a cave filled with monsters to save his friend.',
+      images: [
+        rd_p1,
+        rd_p2,
+        rd_p3
+      ],
+      link: ''
+    },
     // Add more projects as needed
   ];
 
@@ -39,6 +67,11 @@ function Projects() {
       <div className="projects">
         {projectList.map((project, index) => (
           <div key={index} className="project-card">
+            <div className="project-details">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
             <Slider {...sliderSettings}>
               {project.images.map((image, imgIndex) => (
                 <div key={imgIndex}>
@@ -46,11 +79,6 @@ function Projects() {
                 </div>
               ))}
             </Slider>
-            <div className="project-details">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
           </div>
         ))}
       </div>
