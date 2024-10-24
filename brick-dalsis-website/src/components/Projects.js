@@ -9,6 +9,9 @@ import rd_p1 from '../images/rd_title.jpg';
 import rd_p2 from '../images/rd_level.jpg';
 import sa_p2 from '../images/bot_commands.jpg';
 import sa_p1 from '../images/bot_msgs.jpg';
+import sf_p1 from '../images/sf_p2.jpg';
+import sf_p2 from '../images/sf_p1.jpg';
+import sf_p3 from '../images/sf_p3.jpg';
 
 
 function Projects() {
@@ -27,7 +30,9 @@ function Projects() {
       title: 'SongFinder',
       description: 'A web application that my team and I created to help users find new music from an artist they just discovered. The app shows most popular songs from a certain artist using the spotifyAPI and additionally provides similar artists to listen to.',
       images: [
-
+        sf_p1,
+        sf_p2,
+        sf_p3
       ],
       link: ''
     },
