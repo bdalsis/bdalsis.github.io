@@ -7,11 +7,10 @@ import qb_p1 from '../images/qb_title.jpg';
 import rd_p3 from '../images/rd_flare_edit.jpg';
 import rd_p1 from '../images/rd_title.jpg';
 import rd_p2 from '../images/rd_level_edit.jpg';
-import sa_p2 from '../images/bot_commands.jpg';
+import sa_p2 from '../images/bot_commands_edit.jpg';
 import sa_p1 from '../images/bot_msgs.jpg';
-import sf_p1 from '../images/sf_p2.jpg';
-import sf_p2 from '../images/sf_p1.jpg';
-import sf_p3 from '../images/sf_p3.jpg';
+import sf_p1 from '../images/sf_p1_edit.jpg';
+import sf_p2 from '../images/sf_p3_edit.jpg';
 
 
 function Projects() {
@@ -31,8 +30,7 @@ function Projects() {
       description: 'A web application that my team and I created to help users find new music from an artist they just discovered. The app shows most popular songs from a certain artist using the spotifyAPI and additionally provides similar artists to listen to.',
       images: [
         sf_p1,
-        sf_p2,
-        sf_p3
+        sf_p2
       ],
       link: ''
     },
@@ -75,7 +73,9 @@ function Projects() {
             <div className="project-details">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+              {project.link && (
+                <a href={project.link} target="_blank" rel="noopener noreferrer">View Github</a>
+              )}
             </div>
             <Slider {...sliderSettings}>
               {project.images.map((image, imgIndex) => (
