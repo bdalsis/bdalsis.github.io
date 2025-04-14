@@ -87,7 +87,7 @@ function Projects() {
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               {project.link && (
-                <a href={project.link} target="_blank" rel="noopener noreferrer">View Github</a>
+                <a href={project.link} target="_blank" rel="noopener noreferrer">View Game Page</a>
               )}
             </div>
             <Slider {...sliderSettings}>
