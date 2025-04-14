@@ -11,10 +11,23 @@ import sa_p2 from '../images/bot_commands_edit.jpg';
 import sa_p1 from '../images/bot_msgs.jpg';
 import sf_p1 from '../images/sf_p1_edit.jpg';
 import sf_p2 from '../images/sf_p3_edit.jpg';
+import title_card from '../images/KaPaawCover.png';
+import end_card from '../images/KaPaawEndCover.png';
+import ka_paaw_game from '../images/level3_scnshot.jpg';
 
 
 function Projects() {
   const projectList = [
+    {
+      title: 'Ka-Paaw!',
+      description: 'A 2D platformer that I built with an amazing team for the Pirate Software Game Jam 16! It definetly was a challenge to build it within the two week time span, but I think it actually turned out great and I learned so much about Gamemaker and about game design in general! The game is playable using the link below (no downloads required).',
+      images: [
+        title_card,
+        ka_paaw_game,
+        end_card,
+      ],
+      link: 'https://bdalsis.itch.io/ka-paaw'
+    },
     {
       title: 'Qb',
       description: 'A super fun 2D platformer that I built in GameMakerStudio in my free time while studying abroad in Norway. Furthermore, I also created the music for this game! Feel free to fork the github to play/add your own levels!',
